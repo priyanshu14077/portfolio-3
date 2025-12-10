@@ -1,36 +1,140 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Portfolio Website
 
-## Getting Started
+A modern, responsive, and performance-oriented personal portfolio website built to showcase professional experience, projects, achievements, and contact information.
+This site is engineered for clarity, fast load times, and maintainability.
 
-First, run the development server:
+Features
 
-```bash
+Responsive Design: Optimized for desktop, tablet, and mobile screens.
+
+Project Showcase: Dynamic project cards with descriptions, tech stacks, and external links.
+
+About Section: Professional bio, skills, and experience summary.
+
+Contact Section: Integrated contact form or direct CTA links.
+
+SEO-Ready: Metadata, Open Graph tags, sitemap, and clean URL structure.
+
+Performance Optimized: Lazy loading, image optimization, caching strategies.
+
+Accessible UI: WCAG-aligned color contrast, ARIA roles, keyboard navigation.
+
+Tech Stack
+
+Frontend: Next.js / React (or your framework of choice)
+
+Styling: Tailwind CSS / Styled Components / CSS Modules
+
+Deployment: Vercel / Netlify / AWS Amplify
+
+Version Control: Git + GitHub
+
+Update the stack above based on your actual implementation.
+
+Project Structure
+.
+├── public/             # Images, icons, static assets
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Application routes
+│   ├── sections/       # Hero, About, Projects, Contact
+│   ├── lib/            # Helpers, utilities
+│   ├── styles/         # Global styles (if any)
+│   └── data/           # Configurable portfolio content
+├── package.json
+└── README.md
+
+Getting Started
+Prerequisites
+
+Node.js (LTS recommended)
+
+npm / yarn / pnpm
+
+Installation
+git clone <repository-url>
+cd portfolio
+npm install
+
+Run Development Server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit: http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build for Production
+npm run build
+npm run start
 
-## Learn More
+Configuration
+Site Metadata
 
-To learn more about Next.js, take a look at the following resources:
+Update metadata in:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/src/data/siteConfig.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Includes:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Name
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Title
+
+Description
+
+Social links
+
+Theme options
+
+Projects
+
+Add or modify portfolio projects in:
+
+/src/data/projects.js
+
+
+Each project supports:
+
+{
+  title: "",
+  description: "",
+  techStack: ["React", "Next.js", ...],
+  image: "/projects/project1.png",
+  link: "https://example.com"
+}
+
+Deployment
+
+For Vercel:
+
+vercel
+
+
+Automatic deployments trigger on every push to the main branch.
+
+Other providers follow similar upload and build patterns.
+
+Customization Guidelines
+
+Update color scheme and typography in the global theme file.
+
+Replace placeholder images under /public/assets/.
+
+Modify layout components under /src/components/ for extended sections.
+
+Ensure images are optimized (prefer WebP where possible).
+
+Best Practices
+
+Maintain semantic HTML for accessibility.
+
+Keep projects updated to reflect current expertise.
+
+Periodically run Lighthouse audits to preserve high performance.
+
+Guard contact form endpoints if you enable email services.
+
+Contributing
+
+This repository is personal, but suggestions or improvements are welcome.
+Create an issue or open a pull request with clear context.
