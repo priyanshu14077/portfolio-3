@@ -80,7 +80,7 @@ export default function Technologies() {
     <section
       id="technologies"
       ref={ref}
-      className="w-full bg-white-98 py-[200px]"
+      className="w-full bg-white-98 py-[300px]"
     >
       <div className="container mx-auto max-w-[1440px] px-10">
         {/* Header */}
@@ -88,7 +88,7 @@ export default function Technologies() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="sticky top-[100px] mb-15 bg-white-98 z-10"
+          className="sticky top-[100px] mb-[80px] bg-white-98 z-10"
         >
           <h2 className="heading-8 text-black-100">Technical Expertise</h2>
         </motion.div>
@@ -98,7 +98,7 @@ export default function Technologies() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="sticky top-[180px] mb-15 flex justify-center z-10"
+          className="sticky top-[180px] mb-[100px] flex justify-center z-10"
         >
           <h2 className="heading-4 text-black-100 text-center max-w-[850px]">
             &quot;Code is not just what it looks like and feels like. Code is
@@ -114,14 +114,14 @@ export default function Technologies() {
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.1 * index }}
-              className="sticky top-[420px] py-10 z-10"
+              className="sticky top-[420px] py-[60px] z-10"
             >
-              <div className="bg-white-100 rounded-lg p-10 border border-black-10">
-                <div className="flex flex-col md:flex-row gap-8">
-                  <div className="flex-shrink-0">
+              <div className="bg-white-100 rounded-lg p-12 border border-black-10">
+                <div className="flex flex-col md:flex-row gap-12">
+                  <div className=".flex-shrink-0">
                     <span className="mono-18 text-black-60">{tech.number}</span>
                   </div>
-                  <div className="flex-1 flex flex-col gap-6">
+                  <div className="flex-1 flex flex-col gap-8">
                     <h3 className="heading-6 text-black-100">{tech.title}</h3>
                     <p className="text-18 text-black-70 leading-relaxed">
                       {tech.description}

@@ -52,14 +52,14 @@ export default function Testimonials() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="w-full bg-white-100 py-[100px] pb-[100px]">
+    <section ref={ref} className="w-full bg-white-100 py-[200px] pb-[200px]">
       <div className="container mx-auto max-w-[1200px] px-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-center gap-[30px] mb-15"
+          className="flex flex-col items-center gap-[40px] mb-[80px]"
         >
           <h2 className="heading-8 text-black-100">Applause Corner</h2>
         </motion.div>
@@ -83,7 +83,7 @@ export default function Testimonials() {
             {[...testimonials, ...testimonials].map((testimonial, index) => (
               <motion.div
                 key={`${testimonial.id}-${index}`}
-                className="flex-shrink-0 w-[400px] bg-white-98 rounded-lg p-8 border border-black-10"
+                className=".flex-shrink-0 w-[400px] bg-white-98 rounded-lg p-8 border border-black-10"
               >
                 <p className="text-18 text-black-70 mb-6 leading-relaxed">
                   &quot;{testimonial.quote}&quot;

@@ -143,7 +143,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={ref}
-      className="relative w-full bg-white-100 py-[200px] isolate"
+      className="relative w-full bg-white-100 py-[300px] isolate"
       style={{ zIndex: 2 }}
     >
       <div className="container mx-auto max-w-[1200px] px-10">
@@ -152,9 +152,9 @@ export default function Projects() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="relative mb-20 bg-white-100 z-0"
+          className="relative mb-[120px] bg-white-100 z-0"
         >
-          <div className="flex flex-col gap-20">
+          <div className="flex flex-col gap-[80px]">
             <h2 className="heading-8 text-black-100">Featured Project</h2>
             <div className="relative w-full h-screen rounded-lg overflow-hidden bg-white-100 shadow-2xl">
               <motion.div
@@ -169,7 +169,7 @@ export default function Projects() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black-100/80 via-black-100/40 to-transparent" />
+                <div className="absolute inset-0 .bg-gradient-to-t from-black-100/80 via-black-100/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-10 text-white-100 z-10">
                   <h3 className="heading-2 mb-4">{projects[0].title}</h3>
                   <p className="text-20 mb-6 opacity-90">
@@ -238,7 +238,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col gap-[60px] py-[100px]"
+          className="flex flex-col gap-[80px] py-[150px]"
         >
           <div className="flex justify-center">
             <h2 className="heading-4 text-black-100 text-center max-w-[920px]">
@@ -254,9 +254,9 @@ export default function Projects() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="pt-[200px]"
+          className="pt-[250px]"
         >
-          <h2 className="heading-8 text-black-100 mb-[100px]">
+          <h2 className="heading-8 text-black-100 mb-[120px]">
             Selected Projects
           </h2>
 

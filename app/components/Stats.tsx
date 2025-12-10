@@ -94,27 +94,27 @@ export default function Stats() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="w-full bg-white-100 py-[200px]">
+    <section ref={ref} className="w-full bg-white-100 py-[300px]">
       <div className="container mx-auto max-w-[1200px] px-10">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-center mb-[120px]"
+          className="flex flex-col items-center mb-[150px]"
         >
           <h2 className="heading-8 text-black-100">Metric Marvels</h2>
         </motion.div>
 
         {/* Stats Grid */}
-        <div className="flex flex-col gap-30">
+        <div className="flex flex-col gap-[150px]">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.2 * index }}
-              className="flex flex-col md:flex-row items-start justify-center gap-[200px]"
+              className="flex flex-col md:flex-row items-start justify-center gap-[250px]"
             >
               {/* Left: Icon and Title */}
               <div className="flex flex-col gap-3 min-w-[290px]">

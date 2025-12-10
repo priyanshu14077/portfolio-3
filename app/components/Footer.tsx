@@ -1,40 +1,41 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = {
     navigation: [
-      { label: 'About', href: '#about' },
-      { label: 'Projects', href: '#projects' },
-      { label: 'Technologies', href: '#technologies' },
-      { label: 'Contact', href: '#contact' },
+      { label: "About", href: "#about" },
+      { label: "Projects", href: "#projects" },
+      { label: "Technologies", href: "#technologies" },
+      { label: "Contact", href: "#contact" },
     ],
     legal: [
-      { label: 'Privacy Policy', href: '/privacy-policy' }, // to be attached
-      { label: 'Terms & Conditions', href: '/terms-and-conditions' }, // to be attached
-      { label: 'Imprint', href: '/imprint' }, // to be attached
+      { label: "Privacy Policy", href: "/privacy-policy" }, // to be attached
+      { label: "Terms & Conditions", href: "/terms-and-conditions" }, // to be attached
+      { label: "Imprint", href: "/imprint" }, // to be attached
     ],
     social: [
-      { label: 'LinkedIn', href: '#' }, // to be attached
-      { label: 'GitHub', href: '#' }, // to be attached
-      { label: 'Twitter', href: '#' }, // to be attached
-      { label: 'Email', href: '#' }, // to be attached
+      { label: "LinkedIn", href: "#" }, // to be attached
+      { label: "GitHub", href: "#" }, // to be attached
+      { label: "Twitter", href: "#" }, // to be attached
+      { label: "Email", href: "#" }, // to be attached
     ],
   };
 
   return (
-    <footer className="w-full bg-black-100 text-white-100 py-16">
+    <footer className="w-full bg-black-100 text-white-100 py-24">
       <div className="container mx-auto max-w-[1200px] px-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
           {/* Brand */}
           <div className="flex flex-col gap-4">
             <h3 className="heading-6">Priyanshu Kumar Singh</h3>
             <p className="text-16 text-white-100/70 max-w-md">
-              Full Stack Developer specializing in Next.js, TypeScript, and scalable backend architectures.
+              Full Stack Developer specializing in Next.js, TypeScript, and
+              scalable backend architectures.
             </p>
           </div>
 
@@ -102,4 +103,3 @@ export default function Footer() {
     </footer>
   );
 }
-

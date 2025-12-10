@@ -32,7 +32,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="relative w-full bg-black-100 py-[200px] isolate"
+      className="relative w-full bg-black-100 py-[300px] isolate"
       style={{ zIndex: 1 }}
     >
       <div className="container mx-auto max-w-[1200px] px-10 relative z-0">
@@ -55,22 +55,22 @@ export default function About() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-col md:flex-row gap-[80px] pt-[180px] relative z-20"
+          className="flex flex-col md:flex-row gap-[120px] pt-[220px] relative z-20"
         >
           {/* Photo Container with Shadow and Gradient Overlay */}
-          <div className="flex-shrink-0">
+          <div className=".flex-shrink-0">
             <motion.div
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
               className="relative w-full max-w-[400px]"
             >
               {/* Shadow Container */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black-100/50 to-transparent rounded-lg blur-xl opacity-50"></div>
+              <div className="absolute inset-0 .bg-gradient-to-br from-black-100/50 to-transparent rounded-lg blur-xl opacity-50"></div>
 
               {/* Photo Card */}
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black-100/60 via-transparent to-transparent z-10"></div>
+                <div className="absolute inset-0 .bg-gradient-to-t from-black-100/60 via-transparent to-transparent z-10"></div>
 
                 <Image
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&q=80&fit=crop&auto=format"
@@ -95,16 +95,16 @@ export default function About() {
           </div>
 
           {/* Profile Content with Card Styling */}
-          <div className="flex-1 flex flex-col gap-[60px] pt-5">
+          <div className="flex-1 flex flex-col gap-[80px] pt-8">
             {/* Bio Section with Shadow and Gradient */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-8 shadow-2xl border border-white-100/5"
+              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-10 shadow-2xl border border-white-100/5"
             >
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 via-transparent to-black-90/20 rounded-lg pointer-events-none"></div>
+              <div className="absolute inset-0 .bg-gradient-to-br from-black-100/20 via-transparent to-black-90/20 rounded-lg pointer-events-none"></div>
 
               <div className="relative z-10 flex flex-col gap-8">
                 <p className="heading-9 text-white-100 leading-relaxed">
@@ -131,7 +131,7 @@ export default function About() {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-6 shadow-xl border border-white-100/5"
+              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-white-100/5"
             >
               {/* Gradient Overlay */}
               <div className="absolute inset-0 .bg-gradient-to-br from-black-100/20 via-transparent to-black-90/20 rounded-lg pointer-events-none"></div>
@@ -157,10 +157,10 @@ export default function About() {
               initial={{ opacity: 0, x: 30 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-8 shadow-xl border border-white-100/5"
+              className="relative bg-black-90/30 backdrop-blur-sm rounded-lg p-10 shadow-xl border border-white-100/5"
             >
               {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 via-transparent to-black-90/20 rounded-lg pointer-events-none"></div>
+              <div className="absolute inset-0 .bg-gradient-to-br from-black-100/20 via-transparent to-black-90/20 rounded-lg pointer-events-none"></div>
 
               <div className="relative z-10 flex flex-col gap-8">
                 <div className="flex items-center gap-10">
